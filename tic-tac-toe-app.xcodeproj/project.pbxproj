@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C562FDE2B2625520034FE28 /* tic_tac_toe_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C562FDD2B2625520034FE28 /* tic_tac_toe_appApp.swift */; };
-		7C562FE02B2625520034FE28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C562FDF2B2625520034FE28 /* ContentView.swift */; };
+		7C562FE02B2625520034FE28 /* TicTacToeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C562FDF2B2625520034FE28 /* TicTacToeScreen.swift */; };
 		7C562FE22B2625530034FE28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C562FE12B2625530034FE28 /* Assets.xcassets */; };
 		7C562FE52B2625530034FE28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C562FE42B2625530034FE28 /* Preview Assets.xcassets */; };
 		7C562FED2B2628710034FE28 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C562FEC2B2628710034FE28 /* AppColors.swift */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		7C562FDA2B2625520034FE28 /* tic-tac-toe-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tic-tac-toe-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C562FDD2B2625520034FE28 /* tic_tac_toe_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tic_tac_toe_appApp.swift; sourceTree = "<group>"; };
-		7C562FDF2B2625520034FE28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C562FDF2B2625520034FE28 /* TicTacToeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeScreen.swift; sourceTree = "<group>"; };
 		7C562FE12B2625530034FE28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C562FE42B2625530034FE28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C562FEC2B2628710034FE28 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -55,10 +55,10 @@
 		7C562FDC2B2625520034FE28 /* tic-tac-toe-app */ = {
 			isa = PBXGroup;
 			children = (
+				7C562FF12B2635A10034FE28 /* App */,
 				7C562FEB2B26259E0034FE28 /* Design */,
-				7C562FDD2B2625520034FE28 /* tic_tac_toe_appApp.swift */,
-				7C562FDF2B2625520034FE28 /* ContentView.swift */,
-				7C562FE12B2625530034FE28 /* Assets.xcassets */,
+				7C562FF32B2636A80034FE28 /* Screens */,
+				7C562FF22B2635A70034FE28 /* Resources */,
 				7C562FE32B2625530034FE28 /* Preview Content */,
 			);
 			path = "tic-tac-toe-app";
@@ -87,6 +87,46 @@
 				7C562FEF2B2632AB0034FE28 /* Color+HEX.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		7C562FF12B2635A10034FE28 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7C562FDD2B2625520034FE28 /* tic_tac_toe_appApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7C562FF22B2635A70034FE28 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C562FE12B2625530034FE28 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C562FF32B2636A80034FE28 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7C562FF42B26378E0034FE28 /* TicTacToeBoard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7C562FF42B26378E0034FE28 /* TicTacToeBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7C562FDF2B2625520034FE28 /* TicTacToeScreen.swift */,
+				7C562FF52B26388A0034FE28 /* Subviews */,
+			);
+			path = TicTacToeBoard;
+			sourceTree = "<group>";
+		};
+		7C562FF52B26388A0034FE28 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C562FE02B2625520034FE28 /* ContentView.swift in Sources */,
+				7C562FE02B2625520034FE28 /* TicTacToeScreen.swift in Sources */,
 				7C562FF02B2632AB0034FE28 /* Color+HEX.swift in Sources */,
 				7C562FED2B2628710034FE28 /* AppColors.swift in Sources */,
 				7C562FDE2B2625520034FE28 /* tic_tac_toe_appApp.swift in Sources */,
@@ -297,8 +337,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +347,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "nemeziz.tic-tac-toe-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,8 +370,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +380,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "nemeziz.tic-tac-toe-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

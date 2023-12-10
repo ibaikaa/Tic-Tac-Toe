@@ -32,13 +32,17 @@ enum AppColors: ColorValue, AppColorsProtocol, DarkColorSupportance {
     }
     
     static func getColor(_ color: AppColors) -> Color {
-        var isDarkTheme = Bool.random()
+        // TODO: After adding saving selected theme – use condition for returned color
         
-        if isDarkTheme {
-            return Color(hex: color.darkColor.rawValue)
-        } else {
-            return Color(hex: color.rawValue)
-        }
+//        let isDarkTheme = Bool.random()
+//
+//        if isDarkTheme {
+//            return Color(hex: color.darkColor.rawValue)
+//        } else {
+//            return Color(hex: color.rawValue)
+//        }
+        
+        return Color(hex: color.rawValue)
     }
     
 }
